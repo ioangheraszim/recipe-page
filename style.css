@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    /* Primary Colors */
+    --nutmeg:  hsl(14, 45%, 36%);
+    --dark-rasberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --egg-shell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown:  hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*,::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--egg-shell);
+    font-family: 'Be Vietnam Pro';   
+}
+
+main {
+    background-color: var(--white);
+}
+
+main img {
+    width: 100%;
+    object-fit: contain;
+}
+
+section {
+    margin: 1.25rem .275rem;
+    padding: 1.25rem .5rem;
+}
+
+section h1 {
+    font-size: 2rem;
+}
+
+section h1, section h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: normal;
+    text-align: start;
+    padding: .5em 0;
+    margin: .5rem 0;
+}
+
+section ol, section ul  {
+    padding-left: 1rem;
+}
+
+section ul li,
+section ol li {
+    padding: .5rem;
+}
+
+section ul li::marker,
+section ol li::marker {
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+section p, li {
+    color: var(--wenge-brown);
+}
+
+section p {
+    font-size: 16px;
+}
+
+section h2 {
+    color: var(--nutmeg);
+}
+
+section:nth-child(4), section:nth-child(5) {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+section:nth-child(3) {
+    background-color: var(--rose-white);
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+
+section table {
+    width: 100%;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+section table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    border-bottom: 3px solid var(--light-grey);
+}
+
+section table td {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+
+section table td:nth-child(2){
+    color: var(--nutmeg);
+    font-weight: 700;
+    text-align: right;
+}
+
+section table tr:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: min(100% - 2rem, 720px);
+        min-height: 100vh;
+
+        padding: 2rem;        
+        margin: 5rem auto;
+        border-radius: 1rem;
+    }
+
+    main img {
+        border-radius: 1rem;
+    }
+
+    section {
+        margin: 0 auto;
+    }
+}
